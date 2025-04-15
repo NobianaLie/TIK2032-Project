@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -74,5 +75,24 @@
             <p>&copy; 2025 My Portfolio.</p>
         </div>
     </footer>
+    <!-- Tambahkan ini di dalam <footer> atau di mana pun kamu mau -->
+<p id="clock"></p>
+
+<script>
+function updateClock() {
+    const now = new Date();
+    const waktu = now.toLocaleTimeString('id-ID');
+    const tanggal = now.toLocaleDateString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    document.getElementById("clock").innerText = `⏰ Sekarang: ${tanggal}, ${waktu}`;
+}
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+<script>
+    window.onload = function () {
+        alert("👋 Selamat datang di website saya! Jelajahi portofolio dan karya-karya menarik di sini.");
+    };
+    </script>
+    
 </body>
 </html>
