@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Personal Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.php">Blog</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>📩 Contact</h2>
+                <p>Available for collaboration or questions — just get in touch!</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-info">
+                    <h3>🪆 Informasi Kontak</h3>
+                    <p>Punya pertanyaan atau ingin bekerja sama dengan saya? Yuk, hubungi saya melalui:</p>
+                    <ul>
+                        <li><strong>✉️ Email:</strong> nobianalie0611@gmail.com</li>
+                        <li><strong>📱 Telepon:</strong> +62 813 5156 0119</li>
+                        <li><strong>📌 Alamat:</strong> Kleak, Manado</li>
+                        <li><strong>🪪 Media Sosial:</strong> Instagram; naudreylie</li>
+                    </ul>
+                    <p>Silakan hubungi saya melalui kontak di atas. Saya akan dengan senang hati merespons pesan Anda! 😊</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Portofolio.</p>
+        </div>
+    </footer>
+    
+    <p id="clock"></p>
+
+    <script>
+    function updateClock() {
+        const now = new Date();
+        const waktu = now.toLocaleTimeString('id-ID');
+        const tanggal = now.toLocaleDateString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+        document.getElementById("clock").innerText = `⏰ Sekarang: ${tanggal}, ${waktu}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+    </script>
+
+</body>
+</html>
